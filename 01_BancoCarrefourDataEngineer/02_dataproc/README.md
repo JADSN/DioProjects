@@ -2,7 +2,7 @@
 
 Código criado para utilização junto a plataforma da Digital Innovation One
 
-<p align="center"><img src="./DIO.png" width="500"></p>
+<p align="center"><img src="./01.png" width="500"></p>
 
 ## Desafio GCP Dataproc
 
@@ -27,15 +27,24 @@ O desafio consiste em efetuar um processamento de dados utilizando o produto Dat
 ### Entrega do Resultado
 
 1. Criar um repositório no GitHub.
-2. Criar um arquivo chamado ```resultado.txt```. Dentro desse arquivo, colocar as 10 palavras que mais são usadas no livro, de acordo com o resultado do Job.
-3. Inserir os arquivo ```resultado.txt``` e ```part-00000``` no repositório e informar na plataforma da Digital Innovation One.
+1. Criar um arquivo chamado ```resultado.txt```. Dentro desse arquivo, colocar as 10 palavras que mais são usadas no livro, de acordo com o resultado do Job.
+1. Inserir os arquivo ```resultado.txt``` e ```part-00000``` no repositório e informar na plataforma da Digital Innovation One.
 
 ---
+
+### Ajudas
+1. Ver nome do bucket: `gsutil ls`
+1. Realizar upload dos arquivos  contador.py e livro.txt utilizando *Clound Shell*: `gsutil cp contador.py livro.txt gs://${SEU_BUCKET}/`
+
+![Envio do Job](./02_EnvioJob.png)
+
+![Resultado após enviar os arquivos para o bucket](./03_CloudStorage.png)
+
+### O resultado seguiu os requisitos
+1. Espaço vazio não é uma palavra
+1. Letra não é uma palavra 
+1. Não foi necessário nenhum algoritmo de ordenamto pela quatidade de determinada palavra. 
 
 ### Considerações Finais
 
 NOTA: Se o Job mostrar um WARN de Interrupt, basta ignorar. Existe um bug no Hadoop que é conhecido. Isso não impacta no processamento.
-
-Qualquer outra dúvida, informação ou sugestão, fique a vontade para entrar em contato.
-
-marcelo@smarques.com
