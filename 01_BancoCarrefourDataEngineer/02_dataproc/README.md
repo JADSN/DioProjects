@@ -43,7 +43,7 @@ O desafio consiste em efetuar um processamento de dados utilizando o produto Dat
 ### O resultado seguiu os requisitos
 1. Espaço vazio não é uma palavra
 1. Letra não é uma palavra 
-1. Não foi necessário nenhum algoritmo de ordenamto pela quatidade de determinada palavra. 
+1. Não foi necessário nenhum algoritmo de ordenamento pela quatidade de determinada palavra. 
 
 ### Considerações Finais
 
